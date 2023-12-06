@@ -1,0 +1,347 @@
+<!DOCTYPE html>
+<html dir="rtl" lang="ar">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Beetleware</title>
+
+  <!-- bootstrap -->
+  <link rel="stylesheet" href="./assets/bootstrap-4.5.0-dist/css/bootstrap.css" />
+
+  <!-- Fontawesome -->
+  <link rel="stylesheet" href="./assets/fontawesome-free-5.15.1-web/css/all.css" />
+  <!-- js -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="./assets/bootstrap-4.5.0-dist/js/bootstrap.js"></script>
+  <script src="./assets/js/main.js" defer></script>
+
+  <!-- scss -->
+  <link rel="stylesheet" href="./assets/css/style.css" />
+</head>
+
+<body>
+  <!-- Navbar section -->
+  <nav class="navbar navbar-expand-lg py-0 py-lg-2 px-0 px-lg-2 sticky-top primary-bg">
+    <div class="container">
+      <a class="navbar-brand py-0 my-header-img text-decoration-none font-weight-bold primary-c" href="home">
+        <img class="h-100 p-2" src="./assets/media/Logo.png" alt="Logo" />
+      </a>
+
+      <!-- Toggler/collapsibe Button -->
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
+        <i class="navbar-toggler-icon d-inline fas fa-bars fs-2 transparent-bg white-c"></i>
+      </button>
+
+      <!-- Navbar links -->
+      <div class="collapse navbar-collapse" id="collapsibleNavbar">
+        <ul class="d-flex navbar-nav w-100 justify-content-center m-auto">
+          <li class="nav-item py-0 px-lg-4 effect-two">
+            <a class="nav-link animate transparent-bg white-c cfs-1" href="index" target="_self">
+              الرئيسية
+            </a>
+          </li>
+
+          <li class="nav-item py-0 px-lg-4 effect-two">
+            <a class="nav-link animate transparent-bg white-c cfs-1" href="#" target="_self">
+              المزادات
+            </a>
+          </li>
+
+          <li class="nav-item py-0 px-lg-4 effect-two">
+            <a class="nav-link animate transparent-bg white-c cfs-1" href="#" target="_self">
+              تواصل معنا
+            </a>
+          </li>
+        </ul>
+
+        <!-- login link -->
+
+        <a class="text-decoration-none transparent-bg white-c cfs-1 text-start w-25 m-2" href="#" target="_self">
+          <i class="fas fa-user-circle white-c"></i>
+          تسجيل الدخول
+        </a>
+      </div>
+    </div>
+  </nav>
+
+  <!-- bg section -->
+  <section class="section white-bg mt-5">
+    <div class="container">
+      <div class="img-section" style="border-radius: 20px; height: 60vh">
+        <div class="section-img">
+          <img loading="lazy" src="./assets/media/bg.png" alt="bg" />
+        </div>
+
+        <div class="section-text d-flex flex-column">
+          <div class="m-auto">
+            <div class="text-center">
+              <p class=" cfs-4 text-capitalize white-c font-weight-bold" style="backdrop-filter: blur(0px)">
+                اضف سومتك وين ما كنت !
+              </p>
+              <br />
+              <p class=" cfs-2 text-capitalize white-c font-weight-light" style="backdrop-filter: blur(0px)">
+                منصة سومتك تجمع لك بين عرض العقارات او المشاركة فى المزاد
+                اتسهلة و سريعة فى بيئة الكترونية موثوقة !
+              </p>
+            </div>
+          </div>
+
+          <!-- <div class="col"></div> -->
+          <div style="height: 15%;backdrop-filter: blur(15px); border-radius: 20px;">
+            <div class="row m-auto h-100 py-1">
+              <div class="col h-100">
+                <img class="contain text-center w-100 h-100" loading="lazy" src="./assets/media/company-1.png"
+                  alt="company-1" />
+              </div>
+              <div class="col h-100">
+                <img class="contain text-center w-100 h-100" loading="lazy" src="./assets/media/company-2.png"
+                  alt="company-2" />
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+  </section>
+
+  <!-- companies row section -->
+
+  <section class="section white-bg mt-5">
+    <h1 class="text-center cfs-3 font-weight-bold">شركات المزادات</h1>
+    <div class="overflow-hidden m-0 mt-5">
+      <div class="row justify-content-around text-center">
+        <div class="col-12 col-md-2 px-5 my-2">
+          <img class="w-100" src="assets/media/companies/company-1.png" alt="Logo" />
+        </div>
+        <div class="col-12 col-md-2 px-5 my-2">
+          <img class="w-100" src="assets/media/companies/company-2.png" alt="Logo" />
+        </div>
+        <div class="col-12 col-md-2 px-5 my-2">
+          <img class="w-100" src="assets/media/companies/company-3.png" alt="Logo" />
+        </div>
+        <div class="col-12 col-md-2 px-5 my-2">
+          <img class="w-100" src="assets/media/companies/company-4.png" alt="Logo" />
+        </div>
+        <div class="col-12 col-md-2 px-5 my-2">
+          <img class="w-100" src="assets/media/companies/company-5.png" alt="Logo" />
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- buttons row section -->
+  <section class="section white-bg mt-5">
+    <div class="my-0 mb-3 primary-c effect-two container">
+      <h5 class="font-weight-bold cfs-3 primary-c">المزادات</h5>
+      <div class="d-flex m-0 px-5 shadow-lg p-3 mt-5 pill">
+        <div class="row m-auto justify-content-between" style="border-radius: 50%;">
+          <div class="col-12 col-sm-6 col-md-4 px-2">
+            <button type="button" class="btn btn-lg pill border">القائمة</button>
+          </div>
+          <div class="col-12 col-sm-6 col-md-4 px-2">
+            <button type="button" class="btn btn-lg pill border">القادمة</button>
+          </div>
+          <div class="col-12 col-sm-6 col-md-4 px-2">
+            <button type="button" class="btn btn-lg pill border">المنتهى</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+  <!-- cards products section -->
+  <section class="section white-bg mt-5">
+    <div class="row m-0 px-5 shadow-lg p-3 mt-5">
+      <div class="col-12 col-sm-6 col-md-4 col-lg-3 px-2 my-4" id="myProduct">
+        <div class="card">
+          <div class="img-section">
+            <div class="section-text">
+              <img class="w-100" loading="lazy" src="./assets/media/product.png" alt="bg" />
+            </div>
+
+            <div class="section-img d-flex flex-column">
+              <div class="col"></div>
+              <div class="px-2" style="backdrop-filter: blur(20px); border-radius: 8px;">
+
+                <p class="d-block cfs-1 white-c mb-1" style="text-align: start;">
+                  <i class="fa fa-map-marker-alt white-c"></i>
+                  شارع الاخلاص - الدمام
+                </p>
+              </div>
+            </div>
+
+          </div>
+          <div class="card-body">
+            <div class="section-img d-flex flex-column">
+              <div class="m-auto">
+                <span class="cfs-1 primary-c font-weight-bold">
+                  عمارة سكنية الاندلس
+                </span>
+                <img class="" loading="lazy" src="./assets/media/company-card.png" alt="comapny card" />
+              </div>
+              <div class="">
+                <p class="d-block cfs-1 primary-c mb-1" style="text-align: start;">
+                  <i class="fas fa-ruler-combined secondary-c"></i>
+                  325.22م²
+                </p>
+              </div>
+              <div class="row border">
+                <div class="col-12 col-md-6 border">
+                  <p class="cfs-1 primary-c text-center font-weight-light">
+                    تاريخ فتح المزاد
+                  </p>
+                  <p class="cfs-1 primary-c text-center font-weight-bold">
+                    19/2/2023
+                  </p>
+                </div>
+                <div class="col-12 col-md-6 border">
+                  <p class="cfs-1 primary-c text-center font-weight-light">
+                    وقت فتح المزاد
+                  </p>
+                  <p class="cfs-1 primary-c text-center font-weight-bold">
+                    01:45 pm
+                  </p>
+                </div>
+              </div>
+            </div>
+
+            <div class="row my-3">
+              <div class="col-12 col-md-6">
+                <p class="cfs-2 primary-c text-center font-weight-bold">
+                  عدد الاصول
+                </p>
+                <p class="cfs-1 secondary-c text-center font-weight-bold">
+                  71
+                </p>
+              </div>
+              <div class="col-12 col-md-6 m-auto">
+                <button type="button" class="btn secondary-bg white-c p-2">تفاصيل المزاد</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- buttons row section -->
+  <section class="section mt-5">
+    <div class="overflow-hidden m-0 mt-5">
+      <div class="row justify-content-around text-center">
+        <div class="col-12 col-md-3 my-2">
+          <button type="button" class="btn btn-lg pill border secondary-c text-center secondary-brdr">كل المزادات</button>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer section -->
+  <section class="section white-bg pt-2">
+    <div class="row m-0 pt-5">
+      <div class="col-12 col-md-6 px-2 p-0 mb-5">
+        <div class="my-1 d-flex">
+          <img style="width: 155px" src="assets/media/Logo-2.png" alt="Logo" />
+        </div>
+        <p class="light-c" style="text-align: start">
+          هذا النص هو مثال لنص يمكن أن يستبدل في نفس المساحة، لقد تم توليد هذا
+          النص من مولد النص العربى حيث يمكنك ن تولد مثل هذا النص أو العديد من
+          النصوص الأخرى إضافة إلى الموقع الالكترونى.
+        </p>
+        <div class="contact-office-address">
+          <div class="contact-icon">
+            <ul class="m-auto">
+              <li>
+                <a href="#" target="_blank"><img class="border rounded p-2"
+                    src="assets/media/social-icons/instagram.png" alt="Linkedin" /></a>
+              </li>
+              <li>
+                <a href="#" target="_blank"><img class="border rounded p-2" src="assets/media/social-icons/twitter.png"
+                    alt="Linkedin" /></a>
+              </li>
+              <li>
+                <a href="#" target="_blank"><img class="border rounded p-2" src="assets/media/social-icons/linkedin.png"
+                    alt="Linkedin" /></a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+
+      <div class="contact-online-container col-12 col-md-3 px-2 p-0 mb-5">
+        <li class="my-0 mb-3 cfs-1 primary-c effect-two">
+          <h5 class="font-weight-bold cfs-2 primary-c">القائمة الرئيسية</h5>
+        </li>
+        <div class="contact-online-address mt-4">
+          <div class="single-online-address fs-2">
+            <a class="fs-2 black-c text-decoration-none light-c" dir="ltr" href="#">
+              الضوابط الإعلانية الصادرة من الهيئة</a>
+          </div>
+          <div class="single-online-address fs-2">
+            <a class="fs-2 black-c text-decoration-none light-c" dir="ltr" href="#">الشروط والأحكام</a>
+          </div>
+
+          <div class="single-online-address fs-2">
+            <a class="fs-2 black-c text-decoration-none light-c" dir="ltr" href="#">ترخيص الهيئة العامة للعقار</a>
+          </div>
+
+          <div class="single-online-address fs-2">
+            <a class="fs-2 black-c text-decoration-none light-c" dir="ltr" href="#">تواصل معنا</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="contact-online-container col-12 col-md-3 px-2 p-0 mb-5">
+        <li class="my-0 mb-3 cfs-1 primary-c effect-two">
+          <h5 class="font-weight-bold cfs-2 primary-c">الاقسام</h5>
+        </li>
+        <div class="contact-online-address mt-4">
+          <div class="single-online-address fs-2">
+            <a class="fs-2 black-c text-decoration-none light-c" dir="ltr" href="#">
+              مكتبة الدعم</a>
+          </div>
+          <div class="single-online-address fs-2">
+            <a class="fs-2 black-c text-decoration-none light-c" dir="ltr" href="#">الاسئلة الشائعة</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="contact-online-container col-12 col-md-3 px-2 p-0 mb-5">
+        <div class="my-0 mb-3 cfs-1 primary-c effect-two">
+          <h5 class="font-weight-bold cfs-2 primary-c">تواصل معنا</h5>
+        </div>
+        <div class="contact-online-address mt-4">
+          <div class="single-online-address fs-2">
+            <i class="fa fa-map-marker-alt light-c"></i>
+            <a class="fs-2 black-c text-decoration-none light-c" dir="ltr" href="#" target="_blank">الرياض حي الملك
+              فيصل، السعودية</a>
+          </div>
+
+          <div class="single-online-address fs-2">
+            <i class="fa fa-phone light-c"></i>
+            <a class="fs-2 black-c text-decoration-none light-c" dir="ltr" href="tel:+966 570 212 216">+966 570 212
+              216</a>
+          </div>
+
+          <div class="single-online-address fs-2">
+            <i class="fa fa-envelope light-c"></i>
+            <a class="fs-2 black-c text-decoration-none light-c" dir="ltr"
+              href="mailto:info@soum.tech">info@soum.tech</a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Property rights row -->
+    <div class="mt-4">
+      <div class="d-flex justify-content-start p-3">
+        <a class="black-c cfs-2" href="#" target="_self">
+          © جميع الحقوق محفوظة - لــ سومتك 2023
+        </a>
+      </div>
+    </div>
+  </section>
+</body>
+
+</html>

@@ -1,0 +1,321 @@
+@charset "UTF-8";
+/*========================================< Variable*/
+@font-face {
+  font-family: "medium";
+  src: url("../font/DIN NEXT™ ARABIC MEDIUM.otf") format("opentype");
+}
+@font-face {
+  font-family: "blacker";
+  src: url("../font/DIN NEXT™ ARABIC BLACK.otf") format("opentype");
+}
+@font-face {
+  font-family: "heavy";
+  src: url("../font/DIN NEXT™ ARABIC HEAVY.otf") format("opentype");
+}
+@font-face {
+  font-family: "bold";
+  src: url("../font/DIN NEXT™ ARABIC BOLD.otf") format("opentype");
+}
+@font-face {
+  font-family: "light";
+  src: url("../font/DIN NEXT™ ARABIC LIGHT.otf") format("opentype");
+}
+@font-face {
+  font-family: "regular";
+  src: url("../font/DIN NEXT™ ARABIC REGULAR.otf") format("opentype");
+}
+@font-face {
+  font-family: "ultraLight";
+  src: url("../font/DIN NEXT™ ARABIC ULTRALIGHT.otf") format("opentype");
+}
+.medium-font {
+  font-family: "medium";
+}
+
+.blacker-font {
+  font-family: "blacker";
+}
+
+.heavy-font {
+  font-family: "heavy";
+}
+
+.bold-font {
+  font-family: "bold";
+}
+
+.light-font {
+  font-family: "light";
+}
+
+.regular-font {
+  font-family: "regular";
+}
+
+.ultra-light-font {
+  font-family: "ultraLight";
+}
+
+body {
+  font-family: "regular";
+  font-size: 1rem;
+}
+
+.cfs-1 {
+  font-size: 18px;
+}
+
+.cfs-2 {
+  font-size: 20px;
+}
+
+.cfs-3 {
+  font-size: 32px;
+}
+
+.cfs-4 {
+  font-size: 40px;
+}
+
+.primary-c {
+  color: rgb(23, 29, 91) !important;
+}
+
+.secondary-c {
+  color: rgb(238, 168, 32) !important;
+}
+
+.black-c {
+  color: rgb(25, 26, 27) !important;
+}
+
+.white-c {
+  color: rgb(255, 255, 255) !important;
+}
+
+.orange-c {
+  color: rgb(220, 82, 36) !important;
+}
+
+.light-c {
+  color: rgb(117, 117, 117) !important;
+}
+
+.primary-bg {
+  background-color: rgb(23, 29, 91) !important;
+}
+
+.secondary-bg {
+  background-color: rgb(238, 168, 32) !important;
+}
+
+.black-bg {
+  background-color: rgb(25, 26, 27) !important;
+}
+
+.white-bg {
+  background-color: rgb(255, 255, 255) !important;
+}
+
+.orange-bg {
+  background-color: rgb(220, 82, 36) !important;
+}
+
+.light-bg {
+  background-color: rgb(117, 117, 117) !important;
+}
+
+.secondary-brdr {
+  border-color: rgb(238, 168, 32) !important;
+}
+
+/*========================================< paragraph section*/
+nav.navbar * {
+  text-transform: capitalize;
+}
+nav.navbar .navbar-brand img {
+  padding: 5px 0;
+  height: px;
+}
+nav.navbar .dropdown-menu {
+  min-width: 0 !important;
+  max-height: 0 !important;
+  display: block;
+  overflow: hidden;
+  transition: all 400ms ease-in-out !important;
+}
+nav.navbar .dropdown-menu.show {
+  max-height: 400px !important;
+}
+
+li.nav-item {
+  margin: 0 2.5px !important;
+}
+
+a.nav-link {
+  padding: 10px 10px !important;
+  text-align: center !important;
+}
+
+.btn:focus {
+  box-shadow: none;
+}
+
+/*========================================< list style */
+li {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+/*========================================< hover effect for text in navbar and line im footer for h5*/
+.effect-two > a {
+  display: inline-block;
+  position: relative;
+}
+.effect-two > a:after {
+  content: "";
+  display: block;
+  position: absolute;
+  width: 0;
+  bottom: 0;
+  height: 2px;
+  margin: -5px 0;
+  right: 0;
+  background-color: rgb(238, 168, 32);
+  transition: all 0.4s ease-in 0s;
+}
+.effect-two > a:hover:after {
+  width: 100%;
+}
+
+.effect-two {
+  text-align: start;
+}
+
+.effect-two > h5 {
+  display: inline-block;
+  position: relative;
+  text-align: start;
+}
+.effect-two > h5:after {
+  content: "";
+  display: block;
+  position: absolute;
+  width: 0;
+  bottom: 0;
+  height: 2px;
+  margin: -5px 0;
+  right: 0;
+  background-color: rgb(238, 168, 32);
+  transition: all 0.4s ease-in 0s;
+}
+.effect-two > h5:after {
+  width: 25%;
+}
+
+/*========================================< Contact Address And Footer Style */
+.contact-adress {
+  margin: 68px 0 0px;
+  display: flex;
+  flex-direction: column;
+}
+.contact-adress .contact-office-address {
+  margin-bottom: 18px;
+  float: right;
+}
+.contact-adress .contact-online-address {
+  color: rgb(117, 117, 117);
+}
+
+html[dir=rtl] .contact-online-container {
+  padding-right: 50px !important;
+}
+.contact-online-container .contact-online-address {
+  padding-inline-start: 10px !important;
+}
+
+.single-online-address {
+  position: relative;
+  margin-bottom: 30px;
+  text-align: start;
+}
+.single-online-address i {
+  padding-right: 7px;
+  color: rgb(117, 117, 117);
+}
+.single-online-address a {
+  padding-right: 7px;
+  color: rgb(117, 117, 117);
+}
+.single-online-address span {
+  position: absolute;
+  left: 25px;
+  top: 0;
+  width: 100%;
+}
+
+.contact-icon {
+  margin-top: 19px;
+}
+.contact-icon ul li {
+  float: right;
+}
+.contact-icon ul li a {
+  margin: 0 13px 0 13px;
+  padding: 0px 12px 0px 0px;
+}
+
+/*========================================< Responsive Contact Address And Footer Style */
+@media screen and (max-width: 320px) {
+  .contact-office-address {
+    font-size: 18px;
+    max-width: 225px;
+    line-height: 1.5;
+  }
+}
+/*========================================< image section with text position */
+.img-section {
+  position: relative;
+  overflow: hidden;
+}
+.img-section .section-img {
+  display: block;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+.img-section .section-img img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+.img-section .section-text {
+  display: block;
+  position: static;
+  width: 100%;
+  height: 100%;
+}
+
+/*========================================< buttons row */
+.pill {
+  width: 100%;
+  height: 100%;
+  border-radius: 40px;
+  padding: 20px 80px;
+}
+.pill:focus {
+  background-color: rgb(220, 82, 36);
+  color: rgb(255, 255, 255);
+}
+
+/*========================================< images contain */
+img.contain {
+  -o-object-fit: contain;
+     object-fit: contain;
+  -o-object-position: center;
+     object-position: center;
+}/*# sourceMappingURL=style.css.map */

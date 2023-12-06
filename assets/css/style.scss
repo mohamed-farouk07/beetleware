@@ -1,0 +1,352 @@
+/*========================================< Variable*/
+$primary: rgba(23, 29, 91, 1);
+$secondary: rgba(238, 168, 32, 1);
+$black: rgba(25, 26, 27, 1);
+$white: rgba(255, 255, 255, 1);
+$light: rgba(117, 117, 117, 1);
+$orange: rgba(220, 82, 36, 1);
+
+// Fonts
+@font-face {
+  font-family: "medium";
+  src: url("../font/DIN NEXT™ ARABIC MEDIUM.otf") format("opentype");
+}
+
+@font-face {
+  font-family: "blacker";
+  src: url("../font/DIN NEXT™ ARABIC BLACK.otf") format("opentype");
+}
+
+@font-face {
+  font-family: "heavy";
+  src: url("../font/DIN NEXT™ ARABIC HEAVY.otf") format("opentype");
+}
+
+@font-face {
+  font-family: "bold";
+  src: url("../font/DIN NEXT™ ARABIC BOLD.otf") format("opentype");
+}
+
+@font-face {
+  font-family: "light";
+  src: url("../font/DIN NEXT™ ARABIC LIGHT.otf") format("opentype");
+}
+
+@font-face {
+  font-family: "regular";
+  src: url("../font/DIN NEXT™ ARABIC REGULAR.otf") format("opentype");
+}
+
+@font-face {
+  font-family: "ultraLight";
+  src: url("../font/DIN NEXT™ ARABIC ULTRALIGHT.otf") format("opentype");
+}
+
+// Font weight Classes
+.medium-font {
+  font-family: "medium";
+}
+
+.blacker-font {
+  font-family: "blacker";
+}
+
+.heavy-font {
+  font-family: "heavy";
+}
+
+.bold-font {
+  font-family: "bold";
+}
+
+.light-font {
+  font-family: "light";
+}
+
+.regular-font {
+  font-family: "regular";
+}
+
+.ultra-light-font {
+  font-family: "ultraLight";
+}
+
+// Media query
+@media only screen and (max-width: 572px) {
+  :root {
+    $cfs-1: 18px;
+  }
+}
+
+// Body
+body {
+  font-family: "regular";
+  font-size: 1rem;
+}
+
+// Font Size
+.cfs-1 {
+  font-size: 18px;
+}
+
+.cfs-2 {
+  font-size: 20px;
+}
+
+.cfs-3 {
+  font-size: 32px;
+}
+
+.cfs-4 {
+  font-size: 40px;
+}
+
+// Colors
+.primary-c {
+  color: $primary !important;
+}
+
+.secondary-c {
+  color: $secondary !important;
+}
+
+.black-c {
+  color: $black !important;
+}
+
+.white-c {
+  color: $white !important;
+}
+
+.orange-c {
+  color: $orange !important;
+}
+
+.light-c {
+  color: $light !important;
+}
+
+// Color Backgrounds
+.primary-bg {
+  background-color: $primary !important;
+}
+
+.secondary-bg {
+  background-color: $secondary !important;
+}
+
+.black-bg {
+  background-color: $black !important;
+}
+
+.white-bg {
+  background-color: $white !important;
+}
+.orange-bg {
+  background-color: $orange !important;
+}
+
+.light-bg {
+  background-color: $light !important;
+}
+
+.secondary-brdr {
+  border-color: $secondary !important;
+}
+/*========================================< paragraph section*/
+nav.navbar {
+  * {
+    text-transform: capitalize;
+  }
+
+  .navbar-brand img {
+    padding: 5px 0;
+    height: px; // Please provide the height value
+  }
+
+  .dropdown-menu {
+    min-width: 0 !important;
+    max-height: 0 !important;
+    display: block;
+    overflow: hidden;
+    transition: all 400ms ease-in-out !important;
+
+    &.show {
+      max-height: 400px !important;
+    }
+  }
+}
+
+li.nav-item {
+  margin: 0 2.5px !important;
+}
+
+a.nav-link {
+  padding: 10px 10px !important;
+  text-align: center !important;
+}
+
+.btn:focus {
+  box-shadow: none;
+}
+
+/*========================================< list style */
+li {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+/*========================================< hover effect for text in navbar and line im footer for h5*/
+.effect-two > a {
+  display: inline-block;
+  position: relative;
+  &:after {
+    content: "";
+    display: block;
+    position: absolute;
+    width: 0;
+    bottom: 0;
+    height: 2px;
+    margin: -5px 0;
+    right: 0;
+    background-color: $secondary;
+    transition: all 0.4s ease-in 0s;
+  }
+  &:hover:after {
+    width: 100%;
+  }
+}
+
+.effect-two {
+  text-align: start;
+}
+
+.effect-two > h5 {
+  display: inline-block;
+  position: relative;
+  text-align: start;
+  &:after {
+    content: "";
+    display: block;
+    position: absolute;
+    width: 0;
+    bottom: 0;
+    height: 2px;
+    margin: -5px 0;
+    right: 0;
+    background-color: $secondary;
+    transition: all 0.4s ease-in 0s;
+  }
+  &:after {
+    width: 25%;
+  }
+}
+
+/*========================================< Contact Address And Footer Style */
+.contact-adress {
+  margin: 68px 0 0px;
+  display: flex;
+  flex-direction: column;
+  .contact-office-address {
+    margin-bottom: 18px;
+    float: right;
+  }
+  .contact-online-address {
+    color: $light;
+  }
+}
+.contact-online-container {
+  html[dir="rtl"] & {
+    padding-right: 50px !important;
+  }
+  & .contact-online-address {
+    padding-inline-start: 10px !important;
+  }
+}
+.single-online-address {
+  position: relative;
+  margin-bottom: 30px;
+  text-align: start;
+  i {
+    padding-right: 7px;
+    color: $light;
+  }
+  a {
+    padding-right: 7px;
+    color: $light;
+  }
+  span {
+    position: absolute;
+    left: 25px;
+    top: 0;
+    width: 100%;
+  }
+}
+.contact-icon {
+  margin-top: 19px;
+  ul li {
+    float: right;
+    a {
+      margin: 0 13px 0 13px;
+      padding: 0px 12px 0px 0px;
+    }
+  }
+}
+
+/*========================================< Responsive Contact Address And Footer Style */
+@media screen and (max-width: 320px) {
+  .contact-office-address {
+    font-size: 18px;
+    max-width: 225px;
+    line-height: 1.5;
+  }
+}
+
+/*========================================< image section with text position */
+
+.img-section {
+  position: relative;
+  overflow: hidden;
+
+  .section-img {
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+
+    img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+  }
+
+  .section-text {
+    display: block;
+    position: static;
+    width: 100%;
+    height: 100%;
+  }
+}
+
+/*========================================< buttons row */
+$pill-padding: 20px 80px;
+.pill {
+  width: 100%;
+  height: 100%;
+  border-radius: 40px;
+  padding: $pill-padding;
+  &:focus {
+    background-color: $orange;
+    color: $white;
+  }
+}
+
+/*========================================< images contain */
+img.contain {
+  object-fit: contain;
+  object-position: center;
+}
